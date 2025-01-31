@@ -1,0 +1,3 @@
+[submodule "ms-client-gateway"]
+	path = ms-client-gateway
+	url = https://github.com/carlosdiazz/nest_ms_gateway
