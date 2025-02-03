@@ -1,3 +1,9 @@
 [submodule "ms-client-gateway"]
 	path = ms-client-gateway
 	url = https://github.com/carlosdiazz/nest_ms_gateway
+[submodule "ms-products"]
+	path = ms-products
+	url = https://github.com/carlosdiazz/nest_ms_product
+[submodule "ms-orders"]
+	path = ms-orders
+	url = https://github.com/carlosdiazz/nest_ms_orders
