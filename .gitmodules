@@ -10,3 +10,6 @@
 [submodule "ms-payments"]
 	path = ms-payments
 	url = https://github.com/carlosdiazz/nest_ms_payments
+[submodule "nest_ms_auth"]
+	path = nest_ms_auth
+	url = https://github.com/carlosdiazz/nest_ms_auth
