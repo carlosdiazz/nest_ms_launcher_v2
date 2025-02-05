@@ -44,6 +44,17 @@ services:
       - DATABASE_URL=postgresql://postgres:123456@orders-database-new:5432/ordersdb?schema=public
     restart: always
 
+  #Servicio de Auth
+  auth-ms:
+    build: ./nest_ms_auth
+    volumes:
+      - ./nest_ms_auth/src:/usr/src/app/src
+    command: npm run start:dev
+    environment:
+      - PORT=3000
+      - NATS_SERVERS=nats://nats-server:4222
+    restart: always
+
   #Base de Datos de Orders
   orders-database-new:
     container_name: orders-database-new
