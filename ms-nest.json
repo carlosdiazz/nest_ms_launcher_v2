@@ -1,7 +1,7 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2025-02-06T18:23:42.091Z",
+  "__export_date": "2025-02-06T20:56:33.112Z",
   "__export_source": "insomnia.desktop.app:v10.3.0",
   "resources": [
     {
@@ -178,7 +178,7 @@
     {
       "_id": "req_044c4728f8e04f459f681e828b13042c",
       "parentId": "fld_fcfe9979857a42029327d65e1ae20db5",
-      "modified": 1738769266932,
+      "modified": 1738867546890,
       "created": 1738608158323,
       "url": "{{ _.URL_PAYMENTS }}/payments/webhook",
       "name": "Webhook",
@@ -232,7 +232,7 @@
     {
       "_id": "req_8e5f2d33fa594ac287486cb95957b75d",
       "parentId": "fld_dd31a9b710234cc089f77f4e3aa05b7b",
-      "modified": 1738769245195,
+      "modified": 1738867171207,
       "created": 1738073227692,
       "url": "{{ _.URL_GATEWAY }}/products",
       "name": "getProducts",
@@ -256,7 +256,7 @@
         }
       ],
       "headers": [{ "name": "User-Agent", "value": "insomnia/10.3.0" }],
-      "authentication": {},
+      "authentication": { "type": "bearer", "token": "{{ _.TOKEN }}" },
       "metaSortKey": -1738073229945,
       "isPrivate": false,
       "pathParameters": [],
@@ -284,7 +284,7 @@
     {
       "_id": "req_c21aaf30d02c43348a2eea238ee51113",
       "parentId": "fld_dd31a9b710234cc089f77f4e3aa05b7b",
-      "modified": 1738769241612,
+      "modified": 1738867178826,
       "created": 1738079054729,
       "url": "{{ _.URL_GATEWAY }}/products/1",
       "name": "getProductById",
@@ -308,7 +308,7 @@
         }
       ],
       "headers": [{ "name": "User-Agent", "value": "insomnia/10.3.0" }],
-      "authentication": {},
+      "authentication": { "type": "bearer", "token": "{{ _.TOKEN }}" },
       "metaSortKey": -1737965106269.25,
       "isPrivate": false,
       "pathParameters": [],
@@ -323,7 +323,7 @@
     {
       "_id": "req_d39486cd95c54047bdbc394aee2a67d6",
       "parentId": "fld_dd31a9b710234cc089f77f4e3aa05b7b",
-      "modified": 1738769238348,
+      "modified": 1738874620527,
       "created": 1738073412406,
       "url": "{{ _.URL_GATEWAY }}/products",
       "name": "createProduct",
@@ -331,7 +331,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\":\"Products-03\",\n\t\"price\":30\n}"
+        "text": "{\n\t\"name\":\"Products-01\",\n\t\"price\":10\n}"
       },
       "parameters": [
         {
@@ -346,7 +346,7 @@
         { "name": "Content-Type", "value": "application/json" },
         { "name": "User-Agent", "value": "insomnia/10.3.0" }
       ],
-      "authentication": {},
+      "authentication": { "type": "bearer", "token": "{{ _.TOKEN }}" },
       "metaSortKey": -1737856982593.5,
       "isPrivate": false,
       "pathParameters": [],
@@ -361,7 +361,7 @@
     {
       "_id": "req_c103c05f41c34906a5f8a9c76757cbd0",
       "parentId": "fld_dd31a9b710234cc089f77f4e3aa05b7b",
-      "modified": 1738782064572,
+      "modified": 1738867197243,
       "created": 1738079319906,
       "url": "{{ _.URL_GATEWAY }}/products/2",
       "name": "updateProduct",
@@ -384,7 +384,7 @@
         { "name": "Content-Type", "value": "application/json" },
         { "name": "User-Agent", "value": "insomnia/10.3.0" }
       ],
-      "authentication": {},
+      "authentication": { "type": "bearer", "token": "{{ _.TOKEN }}" },
       "metaSortKey": -1737748858917.75,
       "isPrivate": false,
       "pathParameters": [],
@@ -399,7 +399,7 @@
     {
       "_id": "req_780a630d4b5e4a70b390c73751d1ccbb",
       "parentId": "fld_dd31a9b710234cc089f77f4e3aa05b7b",
-      "modified": 1738769231117,
+      "modified": 1738867204887,
       "created": 1738079757950,
       "url": "{{ _.URL_GATEWAY }}/products/56",
       "name": "deleteProduct",
@@ -422,7 +422,7 @@
         { "name": "Content-Type", "value": "application/json" },
         { "name": "User-Agent", "value": "insomnia/10.3.0" }
       ],
-      "authentication": {},
+      "authentication": { "type": "bearer", "token": "{{ _.TOKEN }}" },
       "metaSortKey": -1737694797079.875,
       "isPrivate": false,
       "pathParameters": [],
@@ -437,7 +437,7 @@
     {
       "_id": "req_fc5e62b8b14946ca86c0c24e95babcc1",
       "parentId": "fld_a3aaf4d7eec1425bab9774d854450036",
-      "modified": 1738769227449,
+      "modified": 1738867081569,
       "created": 1738245252662,
       "url": "{{ _.URL_GATEWAY }}/orders",
       "name": "getOrders",
@@ -468,7 +468,7 @@
         }
       ],
       "headers": [{ "name": "User-Agent", "value": "insomnia/10.3.0" }],
-      "authentication": {},
+      "authentication": { "type": "bearer", "token": "{{ _.TOKEN }}" },
       "metaSortKey": -1738073229945,
       "isPrivate": false,
       "pathParameters": [],
@@ -496,9 +496,9 @@
     {
       "_id": "req_45d01b56dc5e4fd6a4fc57628c942d0a",
       "parentId": "fld_a3aaf4d7eec1425bab9774d854450036",
-      "modified": 1738783692728,
+      "modified": 1738867626161,
       "created": 1738245252665,
-      "url": "{{ _.URL_GATEWAY }}/orders/id/ae288a01-4551-4ed4-b045-412faa9da189",
+      "url": "{{ _.URL_GATEWAY }}/orders/id/230bc6ee-ee57-432a-a1a8-11f2a4752073",
       "name": "getOrderById",
       "description": "",
       "method": "GET",
@@ -520,7 +520,7 @@
         }
       ],
       "headers": [{ "name": "User-Agent", "value": "insomnia/10.3.0" }],
-      "authentication": {},
+      "authentication": { "type": "bearer", "token": "{{ _.TOKEN }}" },
       "metaSortKey": -1737965106269.25,
       "isPrivate": false,
       "pathParameters": [],
@@ -535,7 +535,7 @@
     {
       "_id": "req_6287190d66cc4f37974aeb5a1c2f47a8",
       "parentId": "fld_a3aaf4d7eec1425bab9774d854450036",
-      "modified": 1738769215832,
+      "modified": 1738867105568,
       "created": 1738252027984,
       "url": "{{ _.URL_GATEWAY }}/orders/status/PENDING",
       "name": "getOrderByStatus",
@@ -559,7 +559,7 @@
         }
       ],
       "headers": [{ "name": "User-Agent", "value": "insomnia/10.3.0" }],
-      "authentication": {},
+      "authentication": { "type": "bearer", "token": "{{ _.TOKEN }}" },
       "metaSortKey": -1737911044431.375,
       "isPrivate": false,
       "pathParameters": [],
@@ -574,9 +574,9 @@
     {
       "_id": "req_3cef4dc70df2401ea515d6b9e31846d7",
       "parentId": "fld_a3aaf4d7eec1425bab9774d854450036",
-      "modified": 1738769212286,
+      "modified": 1738874858115,
       "created": 1738252527292,
-      "url": "{{ _.URL_GATEWAY }}/orders/6bcdd64c-4c01-4bad-bf95-e320f9142217",
+      "url": "{{ _.URL_GATEWAY }}/orders/ded5382e-651d-4b06-a588-d53c8820dfc5",
       "name": "changeOrderById",
       "description": "",
       "method": "PATCH",
@@ -604,7 +604,7 @@
         { "name": "Content-Type", "value": "application/json" },
         { "name": "User-Agent", "value": "insomnia/10.3.0" }
       ],
-      "authentication": {},
+      "authentication": { "type": "bearer", "token": "{{ _.TOKEN }}" },
       "metaSortKey": -1737884013512.4375,
       "isPrivate": false,
       "pathParameters": [],
@@ -619,7 +619,7 @@
     {
       "_id": "req_8a8cb2b98c114055a6a954863940f71f",
       "parentId": "fld_a3aaf4d7eec1425bab9774d854450036",
-      "modified": 1738782081626,
+      "modified": 1738867562165,
       "created": 1738245252664,
       "url": "{{ _.URL_GATEWAY }}/orders",
       "name": "createOrder",
@@ -627,7 +627,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"items\" : [\n\t\t{\n\t\t\t\"productId\":1,\n\t\t\t\"quantity\":3,\n\t\t\t\"price\":10\n\t\t}\n\t]\n}"
+        "text": "{\n\t\"items\" : [\n\t\t{\n\t\t\t\"productId\":1,\n\t\t\t\"quantity\":3,\n\t\t\t\"price\":1\n\t\t}\n\t]\n}"
       },
       "parameters": [
         {
@@ -642,7 +642,7 @@
         { "name": "Content-Type", "value": "application/json" },
         { "name": "User-Agent", "value": "insomnia/10.3.0" }
       ],
-      "authentication": {},
+      "authentication": { "type": "bearer", "token": "{{ _.TOKEN }}" },
       "metaSortKey": -1737856982593.5,
       "isPrivate": false,
       "pathParameters": [],
@@ -657,12 +657,13 @@
     {
       "_id": "env_7c364f5621c3228db2539ae99c9e98b73ad48449",
       "parentId": "wrk_3a443ead1dc1414a9b47c85da75dc556",
-      "modified": 1738769190875,
+      "modified": 1738874599361,
       "created": 1738072750790,
       "name": "Base Environment",
       "data": {
         "URL_GATEWAY": "http://localhost:3000/api",
-        "URL_PAYMENTS": "http://localhost:3003/api"
+        "URL_PAYMENTS": "http://localhost:3003/api",
+        "TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRkYWViMWJkZjlmNDFjNDgwYThjNSIsImVtYWlsIjoiY2FybG9zQG1haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTczODg3NDU4NywiZXhwIjoxNzM4ODgxNzg3fQ.1-9Y6XlUUBjFKMw_Uq7y1IY90X8HO1Ard7907aiqGX8"
       },
       "dataPropertyOrder": null,
       "color": null,
@@ -681,6 +682,13 @@
           "id": "envPair_a95c4a929108469cbf9ca4b15a565db7",
           "name": "URL_PAYMENTS",
           "value": "http://localhost:3003/api",
+          "type": "str",
+          "enabled": true
+        },
+        {
+          "id": "envPair_4e62d0fa021a413f94212fa9502fbbc9",
+          "name": "TOKEN",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRkYWViMWJkZjlmNDFjNDgwYThjNSIsImVtYWlsIjoiY2FybG9zQG1haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTczODg3NDU4NywiZXhwIjoxNzM4ODgxNzg3fQ.1-9Y6XlUUBjFKMw_Uq7y1IY90X8HO1Ard7907aiqGX8",
           "type": "str",
           "enabled": true
         }
