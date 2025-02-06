@@ -1,0 +1,75 @@
+version: "3"
+
+services:
+  #?=============== Nats ===============
+  nats-server:
+    image: nats:latest
+  #restart: always
+
+  #?=============== Gateway ===============
+  client-gateway:
+    build:
+      context: ./ms-client-gateway
+      dockerfile: dockerfile.prod
+    image: client-gateway-prod
+    ports:
+      - "${CLIENT_GATEWAY_PORT}:${CLIENT_GATEWAY_PORT}"
+    environment:
+      - PORT=${CLIENT_GATEWAY_PORT}
+      - NATS_SERVERS=nats://nats-server:4222
+    #restart: always
+
+  #?=============== Auth ===============
+  auth-ms:
+    build:
+      context: ./nest_ms_auth
+      dockerfile: dockerfile.prod
+    image: auth-prod
+    environment:
+      - PORT=3000
+      - NATS_SERVERS=nats://nats-server:4222
+      - DATABASE_URL=${AUTH_DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+    #restart: always
+
+  #?=============== Products ===============
+  products-ms:
+    build:
+      context: ./ms-products
+      dockerfile: dockerfile.prod
+    image: products-prod
+    environment:
+      - PORT=3000
+      - NATS_SERVERS=nats://nats-server:4222
+      - DATABASE_URL=file:./dev.db
+    #restart: always
+
+  #?=============== Orders ===============
+  orders-ms:
+    build:
+      context: ./ms-orders
+      dockerfile: dockerfile.prod
+      args:
+        - ORDERS_DATABASE_URL=${ORDERS_MS_DATABASE}
+    image: orders-prod
+    environment:
+      - PORT=3000
+      - NATS_SERVERS=nats://nats-server:4222
+      - DATABASE_URL=${ORDERS_MS_DATABASE}
+    #restart: always
+
+  #?=============== Payments ===============
+  payments-ms:
+    build:
+      context: ./ms-payments
+      dockerfile: dockerfile.prod
+    ports:
+      - "${PAYMENTS_MS_PORT}:${PAYMENTS_MS_PORT}"
+    environment:
+      - PORT=${PAYMENTS_MS_PORT}
+      - NATS_SERVERS=nats://nats-server:4222
+      - STRIPE_SECRET=${STRIPE_SECRET}
+      - STRIPE_SUCCESS_URL=${STRIPE_SUCCESS_URL}
+      - STRIPE_CANCEL_URL=${STRIPE_CANCEL_URL}
+      - STRIPE_ENDPOINT_SECRET=${STRIPE_ENDPOINT_SECRET}
+    #restart: always
