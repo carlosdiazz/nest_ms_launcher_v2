@@ -41,3 +41,5 @@ Si se hace al revés, se perderán las referencias de los sub-módulos en el rep
 2. Crear un `.env` basado en `.env.template`
 3. Ejecutar el comando `docker compose -f docker-compose.prod.yml build`
 
+us-east1-docker.pkg.dev/microservicios-nest/image-registry/auth-ms
+us-east1-docker.pkg.dev/microservicios-nest/image-registry/client-gateway
