@@ -1,9 +1,67 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2025-02-06T20:56:33.112Z",
+  "__export_date": "2025-02-10T18:25:22.514Z",
   "__export_source": "insomnia.desktop.app:v10.3.0",
   "resources": [
+    {
+      "_id": "req_ce8a155111cc4fa99f360917f1909193",
+      "parentId": "wrk_3a443ead1dc1414a9b47c85da75dc556",
+      "modified": 1739211587402,
+      "created": 1739210887414,
+      "url": "{{ _.URL_GATEWAY }}/app/health-check",
+      "name": "Health-check-gateway",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [{ "name": "User-Agent", "value": "insomnia/10.3.0" }],
+      "authentication": {},
+      "metaSortKey": -1739210887414,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_3a443ead1dc1414a9b47c85da75dc556",
+      "parentId": null,
+      "modified": 1738072750785,
+      "created": 1738072750785,
+      "name": "nest-ms.yaml",
+      "description": "",
+      "scope": "design",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_0b8fab6299cc4b98ac44845b81f39f44",
+      "parentId": "wrk_3a443ead1dc1414a9b47c85da75dc556",
+      "modified": 1739211709440,
+      "created": 1739211699001,
+      "url": "{{ _.URL_PAYMENTS }}/app/health-check",
+      "name": "Health-check-payments",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [{ "name": "User-Agent", "value": "insomnia/10.3.0" }],
+      "authentication": {},
+      "metaSortKey": -1739000912212.5,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
     {
       "_id": "req_d62741731b864b0ca2d218459bd37042",
       "parentId": "fld_47602eefc7194dab922c070365d5ad14",
@@ -46,16 +104,6 @@
       "metaSortKey": -1738788801716,
       "environmentType": "kv",
       "_type": "request_group"
-    },
-    {
-      "_id": "wrk_3a443ead1dc1414a9b47c85da75dc556",
-      "parentId": null,
-      "modified": 1738072750785,
-      "created": 1738072750785,
-      "name": "nest-ms.yaml",
-      "description": "",
-      "scope": "design",
-      "_type": "workspace"
     },
     {
       "_id": "req_abe50f26ee054fc09a2d4bb6e9647d4e",
@@ -232,7 +280,7 @@
     {
       "_id": "req_8e5f2d33fa594ac287486cb95957b75d",
       "parentId": "fld_dd31a9b710234cc089f77f4e3aa05b7b",
-      "modified": 1738867171207,
+      "modified": 1739200657717,
       "created": 1738073227692,
       "url": "{{ _.URL_GATEWAY }}/products",
       "name": "getProducts",
@@ -657,13 +705,13 @@
     {
       "_id": "env_7c364f5621c3228db2539ae99c9e98b73ad48449",
       "parentId": "wrk_3a443ead1dc1414a9b47c85da75dc556",
-      "modified": 1738874599361,
+      "modified": 1739211827589,
       "created": 1738072750790,
       "name": "Base Environment",
       "data": {
         "URL_GATEWAY": "http://localhost:3000/api",
         "URL_PAYMENTS": "http://localhost:3003/api",
-        "TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRkYWViMWJkZjlmNDFjNDgwYThjNSIsImVtYWlsIjoiY2FybG9zQG1haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTczODg3NDU4NywiZXhwIjoxNzM4ODgxNzg3fQ.1-9Y6XlUUBjFKMw_Uq7y1IY90X8HO1Ard7907aiqGX8"
+        "TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRkYWViMWJkZjlmNDFjNDgwYThjNSIsImVtYWlsIjoiY2FybG9zQG1haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTczOTIwNTM5OSwiZXhwIjoxNzM5MjEyNTk5fQ.Cd_ZZbHm7IWojO3no--xL1K3XA9XxBXDmvrMHK3d0zc"
       },
       "dataPropertyOrder": null,
       "color": null,
@@ -688,7 +736,7 @@
         {
           "id": "envPair_4e62d0fa021a413f94212fa9502fbbc9",
           "name": "TOKEN",
-          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRkYWViMWJkZjlmNDFjNDgwYThjNSIsImVtYWlsIjoiY2FybG9zQG1haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTczODg3NDU4NywiZXhwIjoxNzM4ODgxNzg3fQ.1-9Y6XlUUBjFKMw_Uq7y1IY90X8HO1Ard7907aiqGX8",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRkYWViMWJkZjlmNDFjNDgwYThjNSIsImVtYWlsIjoiY2FybG9zQG1haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTczOTIwNTM5OSwiZXhwIjoxNzM5MjEyNTk5fQ.Cd_ZZbHm7IWojO3no--xL1K3XA9XxBXDmvrMHK3d0zc",
           "type": "str",
           "enabled": true
         }
