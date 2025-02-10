@@ -1,15 +1,15 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2025-02-10T18:25:22.514Z",
+  "__export_date": "2025-02-10T20:17:26.717Z",
   "__export_source": "insomnia.desktop.app:v10.3.0",
   "resources": [
     {
       "_id": "req_ce8a155111cc4fa99f360917f1909193",
       "parentId": "wrk_3a443ead1dc1414a9b47c85da75dc556",
-      "modified": 1739211587402,
+      "modified": 1739218240447,
       "created": 1739210887414,
-      "url": "{{ _.URL_GATEWAY }}/app/health-check",
+      "url": "{{ _.URL_GATEWAY }}",
       "name": "Health-check-gateway",
       "description": "",
       "method": "GET",
@@ -41,9 +41,9 @@
     {
       "_id": "req_0b8fab6299cc4b98ac44845b81f39f44",
       "parentId": "wrk_3a443ead1dc1414a9b47c85da75dc556",
-      "modified": 1739211709440,
+      "modified": 1739218254401,
       "created": 1739211699001,
-      "url": "{{ _.URL_PAYMENTS }}/app/health-check",
+      "url": "{{ _.URL_PAYMENTS }}",
       "name": "Health-check-payments",
       "description": "",
       "method": "GET",
@@ -65,9 +65,9 @@
     {
       "_id": "req_d62741731b864b0ca2d218459bd37042",
       "parentId": "fld_47602eefc7194dab922c070365d5ad14",
-      "modified": 1738857268520,
+      "modified": 1739218498736,
       "created": 1738790926551,
-      "url": "{{ _.URL_GATEWAY }}/auth/register",
+      "url": "{{ _.URL_GATEWAY }}/api/auth/register",
       "name": "registerUser",
       "description": "",
       "method": "POST",
@@ -108,9 +108,9 @@
     {
       "_id": "req_abe50f26ee054fc09a2d4bb6e9647d4e",
       "parentId": "fld_47602eefc7194dab922c070365d5ad14",
-      "modified": 1738857574597,
+      "modified": 1739218505258,
       "created": 1738790976998,
-      "url": "{{ _.URL_GATEWAY }}/auth/login",
+      "url": "{{ _.URL_GATEWAY }}/api/auth/login",
       "name": "loginUser",
       "description": "",
       "method": "POST",
@@ -138,9 +138,9 @@
     {
       "_id": "req_15305b0e39774e48a3a013afac98e1c1",
       "parentId": "fld_47602eefc7194dab922c070365d5ad14",
-      "modified": 1738866154425,
+      "modified": 1739218509607,
       "created": 1738790992377,
-      "url": "{{ _.URL_GATEWAY }}/auth/verify-token",
+      "url": "{{ _.URL_GATEWAY }}/api/auth/verify-token",
       "name": "verifyToken",
       "description": "",
       "method": "GET",
@@ -165,9 +165,9 @@
     {
       "_id": "req_60f9dcab73bd4324bd244347e3465ccb",
       "parentId": "fld_fcfe9979857a42029327d65e1ae20db5",
-      "modified": 1738769278036,
+      "modified": 1739218513477,
       "created": 1738608010418,
-      "url": "{{ _.URL_PAYMENTS }}/payments/success",
+      "url": "{{ _.URL_PAYMENTS }}/api/payments/success",
       "name": "Success",
       "description": "",
       "method": "GET",
@@ -202,9 +202,9 @@
     {
       "_id": "req_0f6ad17bacdb414caf421b6bd696a770",
       "parentId": "fld_fcfe9979857a42029327d65e1ae20db5",
-      "modified": 1738769274254,
+      "modified": 1739218519449,
       "created": 1738608142445,
-      "url": "{{ _.URL_PAYMENTS }}/payments/cancel",
+      "url": "{{ _.URL_PAYMENTS }}/api/payments/cancel",
       "name": "Cancel",
       "description": "",
       "method": "GET",
@@ -226,9 +226,9 @@
     {
       "_id": "req_044c4728f8e04f459f681e828b13042c",
       "parentId": "fld_fcfe9979857a42029327d65e1ae20db5",
-      "modified": 1738867546890,
+      "modified": 1739218524167,
       "created": 1738608158323,
-      "url": "{{ _.URL_PAYMENTS }}/payments/webhook",
+      "url": "{{ _.URL_PAYMENTS }}/api/payments/webhook",
       "name": "Webhook",
       "description": "",
       "method": "POST",
@@ -250,9 +250,9 @@
     {
       "_id": "req_9a6daed1a0a942c9891cd515bc0ca4d4",
       "parentId": "fld_fcfe9979857a42029327d65e1ae20db5",
-      "modified": 1738770683551,
+      "modified": 1739218530135,
       "created": 1738608182055,
-      "url": "{{ _.URL_PAYMENTS }}/payments/create-payment-session",
+      "url": "{{ _.URL_PAYMENTS }}/api/payments/create-payment-session",
       "name": "Create-payment-session(OLD)",
       "description": "",
       "method": "POST",
@@ -280,9 +280,9 @@
     {
       "_id": "req_8e5f2d33fa594ac287486cb95957b75d",
       "parentId": "fld_dd31a9b710234cc089f77f4e3aa05b7b",
-      "modified": 1739200657717,
+      "modified": 1739218538796,
       "created": 1738073227692,
-      "url": "{{ _.URL_GATEWAY }}/products",
+      "url": "{{ _.URL_GATEWAY }}/api/products",
       "name": "getProducts",
       "description": "",
       "method": "GET",
@@ -332,9 +332,9 @@
     {
       "_id": "req_c21aaf30d02c43348a2eea238ee51113",
       "parentId": "fld_dd31a9b710234cc089f77f4e3aa05b7b",
-      "modified": 1738867178826,
+      "modified": 1739218544868,
       "created": 1738079054729,
-      "url": "{{ _.URL_GATEWAY }}/products/1",
+      "url": "{{ _.URL_GATEWAY }}/api/products/1",
       "name": "getProductById",
       "description": "",
       "method": "GET",
@@ -371,9 +371,9 @@
     {
       "_id": "req_d39486cd95c54047bdbc394aee2a67d6",
       "parentId": "fld_dd31a9b710234cc089f77f4e3aa05b7b",
-      "modified": 1738874620527,
+      "modified": 1739218549728,
       "created": 1738073412406,
-      "url": "{{ _.URL_GATEWAY }}/products",
+      "url": "{{ _.URL_GATEWAY }}/api/products",
       "name": "createProduct",
       "description": "",
       "method": "POST",
@@ -409,9 +409,9 @@
     {
       "_id": "req_c103c05f41c34906a5f8a9c76757cbd0",
       "parentId": "fld_dd31a9b710234cc089f77f4e3aa05b7b",
-      "modified": 1738867197243,
+      "modified": 1739218554131,
       "created": 1738079319906,
-      "url": "{{ _.URL_GATEWAY }}/products/2",
+      "url": "{{ _.URL_GATEWAY }}/api/products/2",
       "name": "updateProduct",
       "description": "",
       "method": "PATCH",
@@ -447,9 +447,9 @@
     {
       "_id": "req_780a630d4b5e4a70b390c73751d1ccbb",
       "parentId": "fld_dd31a9b710234cc089f77f4e3aa05b7b",
-      "modified": 1738867204887,
+      "modified": 1739218558715,
       "created": 1738079757950,
-      "url": "{{ _.URL_GATEWAY }}/products/56",
+      "url": "{{ _.URL_GATEWAY }}/api/products/56",
       "name": "deleteProduct",
       "description": "",
       "method": "DELETE",
@@ -485,9 +485,9 @@
     {
       "_id": "req_fc5e62b8b14946ca86c0c24e95babcc1",
       "parentId": "fld_a3aaf4d7eec1425bab9774d854450036",
-      "modified": 1738867081569,
+      "modified": 1739218567773,
       "created": 1738245252662,
-      "url": "{{ _.URL_GATEWAY }}/orders",
+      "url": "{{ _.URL_GATEWAY }}/api/orders",
       "name": "getOrders",
       "description": "",
       "method": "GET",
@@ -544,9 +544,9 @@
     {
       "_id": "req_45d01b56dc5e4fd6a4fc57628c942d0a",
       "parentId": "fld_a3aaf4d7eec1425bab9774d854450036",
-      "modified": 1738867626161,
+      "modified": 1739218576471,
       "created": 1738245252665,
-      "url": "{{ _.URL_GATEWAY }}/orders/id/230bc6ee-ee57-432a-a1a8-11f2a4752073",
+      "url": "{{ _.URL_GATEWAY }}/api/orders/id/230bc6ee-ee57-432a-a1a8-11f2a4752073",
       "name": "getOrderById",
       "description": "",
       "method": "GET",
@@ -583,9 +583,9 @@
     {
       "_id": "req_6287190d66cc4f37974aeb5a1c2f47a8",
       "parentId": "fld_a3aaf4d7eec1425bab9774d854450036",
-      "modified": 1738867105568,
+      "modified": 1739218583054,
       "created": 1738252027984,
-      "url": "{{ _.URL_GATEWAY }}/orders/status/PENDING",
+      "url": "{{ _.URL_GATEWAY }}/api/orders/status/PENDING",
       "name": "getOrderByStatus",
       "description": "",
       "method": "GET",
@@ -622,9 +622,9 @@
     {
       "_id": "req_3cef4dc70df2401ea515d6b9e31846d7",
       "parentId": "fld_a3aaf4d7eec1425bab9774d854450036",
-      "modified": 1738874858115,
+      "modified": 1739218588762,
       "created": 1738252527292,
-      "url": "{{ _.URL_GATEWAY }}/orders/ded5382e-651d-4b06-a588-d53c8820dfc5",
+      "url": "{{ _.URL_GATEWAY }}/api/orders/ded5382e-651d-4b06-a588-d53c8820dfc5",
       "name": "changeOrderById",
       "description": "",
       "method": "PATCH",
@@ -667,9 +667,9 @@
     {
       "_id": "req_8a8cb2b98c114055a6a954863940f71f",
       "parentId": "fld_a3aaf4d7eec1425bab9774d854450036",
-      "modified": 1738867562165,
+      "modified": 1739218593931,
       "created": 1738245252664,
-      "url": "{{ _.URL_GATEWAY }}/orders",
+      "url": "{{ _.URL_GATEWAY }}/api/orders",
       "name": "createOrder",
       "description": "",
       "method": "POST",
@@ -761,6 +761,129 @@
       "contents": "",
       "contentType": "yaml",
       "_type": "api_spec"
+    },
+    {
+      "_id": "env_798b9fbda344448f8f09a394caf06dfd",
+      "parentId": "env_7c364f5621c3228db2539ae99c9e98b73ad48449",
+      "modified": 1739218485079,
+      "created": 1739212268394,
+      "name": "DEV",
+      "data": {
+        "URL_GATEWAY": "http://localhost:3000",
+        "URL_PAYMENTS": "http://localhost:3003",
+        "TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRkYWViMWJkZjlmNDFjNDgwYThjNSIsImVtYWlsIjoiY2FybG9zQG1haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTczOTIwNTM5OSwiZXhwIjoxNzM5MjEyNTk5fQ.Cd_ZZbHm7IWojO3no--xL1K3XA9XxBXDmvrMHK3d0zc"
+      },
+      "dataPropertyOrder": null,
+      "color": "#00ff11",
+      "isPrivate": false,
+      "metaSortKey": 1739212268393,
+      "environmentType": "kv",
+      "kvPairData": [
+        {
+          "id": "envPair_707dee2e954945aaa54d7fb9a19ca6ab",
+          "name": "URL_GATEWAY",
+          "value": "http://localhost:3000",
+          "type": "str",
+          "enabled": true
+        },
+        {
+          "id": "envPair_b5b135beb8fe4faa9f4e8a6c7d21a9a1",
+          "name": "URL_PAYMENTS",
+          "value": "http://localhost:3003",
+          "type": "str",
+          "enabled": true
+        },
+        {
+          "id": "envPair_4e5b597cb8514810a94ae93ca1876e22",
+          "name": "TOKEN",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRkYWViMWJkZjlmNDFjNDgwYThjNSIsImVtYWlsIjoiY2FybG9zQG1haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTczOTIwNTM5OSwiZXhwIjoxNzM5MjEyNTk5fQ.Cd_ZZbHm7IWojO3no--xL1K3XA9XxBXDmvrMHK3d0zc",
+          "type": "str",
+          "enabled": true
+        }
+      ],
+      "_type": "environment"
+    },
+    {
+      "_id": "env_561610e81a1544e5b169e71880b68216",
+      "parentId": "env_7c364f5621c3228db2539ae99c9e98b73ad48449",
+      "modified": 1739218480641,
+      "created": 1739212380345,
+      "name": "PROD_LOCAL",
+      "data": {
+        "URL_GATEWAY": "http://localhost:32049",
+        "URL_PAYMENTS": "http://localhost:32332",
+        "TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRkYWViMWJkZjlmNDFjNDgwYThjNSIsImVtYWlsIjoiY2FybG9zQG1haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTczOTIwNTM5OSwiZXhwIjoxNzM5MjEyNTk5fQ.Cd_ZZbHm7IWojO3no--xL1K3XA9XxBXDmvrMHK3d0zc"
+      },
+      "dataPropertyOrder": null,
+      "color": "#f00000",
+      "isPrivate": false,
+      "metaSortKey": 1739212268443,
+      "environmentType": "kv",
+      "kvPairData": [
+        {
+          "id": "envPair_707dee2e954945aaa54d7fb9a19ca6ab",
+          "name": "URL_GATEWAY",
+          "value": "http://localhost:32049",
+          "type": "str",
+          "enabled": true
+        },
+        {
+          "id": "envPair_b5b135beb8fe4faa9f4e8a6c7d21a9a1",
+          "name": "URL_PAYMENTS",
+          "value": "http://localhost:32332",
+          "type": "str",
+          "enabled": true
+        },
+        {
+          "id": "envPair_4e5b597cb8514810a94ae93ca1876e22",
+          "name": "TOKEN",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRkYWViMWJkZjlmNDFjNDgwYThjNSIsImVtYWlsIjoiY2FybG9zQG1haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTczOTIwNTM5OSwiZXhwIjoxNzM5MjEyNTk5fQ.Cd_ZZbHm7IWojO3no--xL1K3XA9XxBXDmvrMHK3d0zc",
+          "type": "str",
+          "enabled": true
+        }
+      ],
+      "_type": "environment"
+    },
+    {
+      "_id": "env_0ddd53e39cf449aead4028fe53189f40",
+      "parentId": "env_7c364f5621c3228db2539ae99c9e98b73ad48449",
+      "modified": 1739218476244,
+      "created": 1739217506867,
+      "name": "PROD",
+      "data": {
+        "URL_GATEWAY": "http://35.227.203.125",
+        "URL_PAYMENTS": "http://34.36.226.36",
+        "TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRkYWViMWJkZjlmNDFjNDgwYThjNSIsImVtYWlsIjoiY2FybG9zQG1haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTczOTIwNTM5OSwiZXhwIjoxNzM5MjEyNTk5fQ.Cd_ZZbHm7IWojO3no--xL1K3XA9XxBXDmvrMHK3d0zc"
+      },
+      "dataPropertyOrder": null,
+      "color": "#f00000",
+      "isPrivate": false,
+      "metaSortKey": 1739212268493,
+      "environmentType": "kv",
+      "kvPairData": [
+        {
+          "id": "envPair_707dee2e954945aaa54d7fb9a19ca6ab",
+          "name": "URL_GATEWAY",
+          "value": "http://35.227.203.125",
+          "type": "str",
+          "enabled": true
+        },
+        {
+          "id": "envPair_b5b135beb8fe4faa9f4e8a6c7d21a9a1",
+          "name": "URL_PAYMENTS",
+          "value": "http://34.36.226.36",
+          "type": "str",
+          "enabled": true
+        },
+        {
+          "id": "envPair_4e5b597cb8514810a94ae93ca1876e22",
+          "name": "TOKEN",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRkYWViMWJkZjlmNDFjNDgwYThjNSIsImVtYWlsIjoiY2FybG9zQG1haWwuY29tIiwibmFtZSI6IkNhcmxvcyIsImlhdCI6MTczOTIwNTM5OSwiZXhwIjoxNzM5MjEyNTk5fQ.Cd_ZZbHm7IWojO3no--xL1K3XA9XxBXDmvrMHK3d0zc",
+          "type": "str",
+          "enabled": true
+        }
+      ],
+      "_type": "environment"
     }
   ]
 }
