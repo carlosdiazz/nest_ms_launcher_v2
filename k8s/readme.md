@@ -77,3 +77,10 @@ kubectl get secret <nombre> -o yaml > <nombre>.yml
 ```
 kubectl create -f <nombre>.yml
 ```
+
+## Para cambiar de contexto
+* Con esto se cuales Context tengo ya
+`Kubectl config get-contexts`
+
+* Con esto puedo cambiar a otro context
+`kubectl config use-context <name>`
